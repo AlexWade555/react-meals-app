@@ -8,7 +8,7 @@ const {meals} = useGlobalContext()
       const {idMeal, strMeal:title, strMealThumb:image} = singleMeal
       return <article key={idMeal} className="single-meal">
 
-        <img src={image} className="img" alt="meal img" style={{width:'200px'}}/>
+        <img src={image} className="img" alt="meal img"/>
         <footer>
           <h5>{title}</h5>
           <button className="like btn">click me</button>
