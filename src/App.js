@@ -9,7 +9,7 @@ import Search from './compponents/Search';
 function App() {
   return (
     <main>
-      {/* <Search /> */}
+      <Search />
       {/* <Favorites /> */}
       <Meals />
       {/* <Modal /> */}
