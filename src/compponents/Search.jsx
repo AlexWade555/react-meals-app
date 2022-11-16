@@ -16,11 +16,16 @@ const Search = () => {
     }
   }
 
+  const handleRandomMeal = () =>{
+    setSearchTerm('')
+    setText('')
+    fetchRandomMeal()
+  }
   return <header className="search-container">
     <form onSubmit={handleSubmit}>
       <input type="text" placeholder='type favourite meal' value={text} onChange={handleChange} className="form-input" />
       <button type="submit" className="btn">search</button>
-      <button type="button" className="btn btn-hipster" onClick={fetchRandomMeal}>surpise me</button>
+      <button type="button" className="btn btn-hipster" onClick={handleRandomMeal}>surpise me</button>
 
     </form>
   </header>
