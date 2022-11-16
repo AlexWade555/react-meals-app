@@ -32,7 +32,7 @@ const AppProvider = ({children}) => {
   useEffect(()=>{
     fetchMeals(`${allMealsUrl}${searchTerm}`)
 
-  },[])
+  },[searchTerm])
 
   return <AppContext.Provider value = {{loading, meals, setSearchTerm}}>
     {children}
