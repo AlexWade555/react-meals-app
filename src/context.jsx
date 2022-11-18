@@ -43,7 +43,7 @@ const selectMeal = (idMeal, favortieMeal) =>{
   setShowModal(true);
 }
 
-const closeModal - () =>{
+const closeModal = () =>{
   setShowModal(false)
 }
 
