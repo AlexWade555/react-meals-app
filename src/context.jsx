@@ -54,7 +54,7 @@ const selectMeal = (idMeal, favortieMeal) =>{
 
   },[searchTerm])
 
-  return <AppContext.Provider value = {{loading, meals, setSearchTerm, fetchRandomMeal, showModal}}>
+  return <AppContext.Provider value = {{loading, meals, setSearchTerm, fetchRandomMeal, showModal, selectedMeal, selectMeal}}>
     {children}
   </AppContext.Provider>
 }
