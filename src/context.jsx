@@ -36,6 +36,13 @@ const fetchRandomMeal = () => {
   fetchMeals(randomMealUrl)
 }
 
+const selectMeal = (idMeal, favortieMeal) =>{
+  let meal;
+  meal = meals.find((meal)=>meal.idMeal === idMeal)
+  setSelectedMeal(meal)
+  setShowModal(true);
+}
+
   useEffect(()=>{
     fetchMeals(allMealsUrl)
   },[])
