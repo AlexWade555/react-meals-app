@@ -48,6 +48,19 @@ const closeModal = () =>{
   setShowModal(false)
 }
 
+const addToFavorites = (idMeal) => {
+  const meal = meals.find((meal) => meal.idMeal === idMeal)
+  const alreadyFavorite = favorites.find((meal)=> meal.idMeal === idMeal)
+  if (alreadyFavorite) return
+  const updatedFavorites = [...favorites, meal];
+  setFavorites(updatedFavorites)
+}
+
+const removeFromfavorites = (idMeal) => {
+  const updatedFavorites = favorites.filter((meal) => meal.idMeal !== idMeal)
+  setFavorites(updatedFavorites)
+}
+
   useEffect(()=>{
     fetchMeals(allMealsUrl)
   },[])
