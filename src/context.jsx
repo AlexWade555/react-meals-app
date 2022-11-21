@@ -56,8 +56,8 @@ const addToFavorites = (idMeal) => {
   setFavorites(updatedFavorites)
 }
 
-const removeFromfavorites = (idMeal) => {
-  const updatedFavorites = favorites.filter((meal) => meal.idMeal !== idMeal)
+const removeFromFavorites = (idMeal) => {
+  const updatedFavorites = favorites.filter((meal) => meal.idMeal !== idMeal);
   setFavorites(updatedFavorites)
 }
 
@@ -72,7 +72,7 @@ const removeFromfavorites = (idMeal) => {
 
   },[searchTerm])
 
-  return <AppContext.Provider value = {{loading, meals, setSearchTerm, fetchRandomMeal, showModal, selectedMeal, selectMeal, closeModal, addToFavorites, removeFromfavorites, favorites}}>
+  return <AppContext.Provider value = {{loading, meals, setSearchTerm, fetchRandomMeal, showModal, selectedMeal, selectMeal, closeModal, addToFavorites, removeFromFavorites, favorites}}>
     {children}
   </AppContext.Provider>
 }
