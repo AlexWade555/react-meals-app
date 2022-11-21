@@ -72,7 +72,7 @@ const removeFromfavorites = (idMeal) => {
 
   },[searchTerm])
 
-  return <AppContext.Provider value = {{loading, meals, setSearchTerm, fetchRandomMeal, showModal, selectedMeal, selectMeal, closeModal, addToFavorites, removeFromfavorites}}>
+  return <AppContext.Provider value = {{loading, meals, setSearchTerm, fetchRandomMeal, showModal, selectedMeal, selectMeal, closeModal, addToFavorites, removeFromfavorites, favorites}}>
     {children}
   </AppContext.Provider>
 }
