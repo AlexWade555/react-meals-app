@@ -1,4 +1,4 @@
-An application to keep track of a user's favorite meals as taken from an API (themealdb).
+<p>An application to keep track of a user's favorite meals as taken from an API (themealdb).
  
 Components : 	Display cards with images, titles and option to add to favorites 
 		Search bar to search through meals and surprise me option for selecting random meal
@@ -8,3 +8,4 @@ Components : 	Display cards with images, titles and option to add to favorites
 Hooks & API's:	themealdb (https://www.themealdb.com/api.php)
 		useState hook
 		Context API
+</p>
